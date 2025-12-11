@@ -36,7 +36,7 @@ author:
     affiliations:
         - ref: seec
 abstract: |
-  Birds can respond to environmental variability through movement. Seasonally predictable fluctuations lead to migration while unpredictable variability leads to nomadism. Intermediate strategies also exist. We examined possible environmental drivers associated with arrival and departure of five migratory and six nomadic bird species in western South Africa, using dynamic occupancy models and data from the Southern African Bird Atlas Project. Dynamic occupancy models estimate site occupancy at the beginning of the study. Occupancy probabilities at later time steps are derived from directly estimated colonisation and extinction probabilities. Here, we use these models to estimate monthly changes in occupancy between 2014 and 2018, redefining colonisation as arrival and extinction as departure. We modelled arrival and departure as a function of changes and anomalies in average monthly rainfall, temperature and vegetation. Arrival and departure of obligate migrants were associated with seasonal changes in average rainfall, temperature and vegetation. In nomadic species, arrival was associated with seasonal changes in average rainfall, temperature and vegetation, while departure was associated with anomalies in rainfall, temperature and vegetation. The models successfully captured the generally known seasonal pattern in occupancy of all five obligate migrants, while no regular seasonal fluctuation in occupancy was evident among the nomadic species. Over the four-year period, no species showed a strong shift in seasonal range dynamics in both groups.
+  Birds can respond to environmental variability through movement. Seasonally predictable fluctuations lead to migration while unpredictable variability leads to nomadism. Intermediate strategies also exist. We examined possible environmental drivers associated with arrival and departure of five migratory and six nomadic bird species in western South Africa, using dynamic occupancy models and data from the Southern African Bird Atlas Project. Dynamic occupancy models estimate site occupancy at the beginning of the study. Occupancy probabilities at later time steps are derived from directly estimated colonisation and extinction probabilities. Here, we use these models to estimate monthly changes in occupancy between 2014 and 2018, redefining colonisation as arrival and extinction as departure. We modelled arrival and departure as a function of changes and anomalies in average monthly rainfall, temperature and vegetation. Arrival and departure of obligate migrants were associated with seasonal changes in average rainfall, temperature and vegetation. In nomadic species, arrival was associated with seasonal changes in average rainfall, temperature and vegetation, while departure was associated with anomalies in rainfall, temperature and vegetation. The models successfully captured the generally known seasonal pattern in occupancy of all five obligate migrants, while no regular seasonal fluctuation in occupancy was evident among the nomadic species. Over the four-year period, no species showed a strong shift in seasonal range dynamics in either group.
 keywords: 
   - keyword1
   - keyword2
@@ -55,63 +55,71 @@ editor:
     wrap: 72
 ---
 
-# Chapter 1: Seasonal range dynamics of migratory birds
+# Introduction
 
-## Introduction
+<!-- Species range shifts, which have been evident in a wide range of marine -->
+<!-- and terrestrial taxa ( Chen et al., 2011a; Przeslawski et al., 2012; -->
+<!-- Tingley et al., 2012; Howes et al., 2019), have resulted in renewed -->
+<!-- interest in factors that limit species’ distributions (Gaston, 2009; -->
+<!-- Sexton et al., 2009; Pigot et al., 2010; Angert et al., 2011). Often, -->
+<!-- such shifts have been linked to recent climate change (Parmesan and -->
+<!-- Yohe, 2003; Chen et al., 2011a; Gottfried et al., 2012; Poloczanska et -->
+<!-- al., 2013) although it is recognized that there is a host of other -->
+<!-- factors, such as land-use change, biological invasions, atmospheric CO 2 -->
+<!-- increase and many more, that could trigger species range shifts (Sala, -->
+<!-- 2000; Jetz et al., 2007; Parmesan et al., 2011; Péron and Altwegg, -->
+<!-- 2015). In the Southern Hemisphere, relatively fewer studies on species -->
+<!-- range shifts have been conducted than in the Northern Hemisphere, where -->
+<!-- a general pattern of poleward and upward range shifts has been reported -->
+<!-- (Lenoir and Svenning, 2013, 2015).  -->
 
-[@teitelbaum2019beyond]: review of nomadism
-
-Species range shifts, which have been evident in a wide range of marine
-and terrestrial taxa ( Chen et al., 2011a; Przeslawski et al., 2012;
-Tingley et al., 2012; Howes et al., 2019), have resulted in renewed
-interest in factors that limit species’ distributions (Gaston, 2009;
-Sexton et al., 2009; Pigot et al., 2010; Angert et al., 2011). Often,
-such shifts have been linked to recent climate change (Parmesan and
-Yohe, 2003; Chen et al., 2011a; Gottfried et al., 2012; Poloczanska et
-al., 2013) although it is recognized that there is a host of other
-factors, such as land-use change, biological invasions, atmospheric CO 2
-increase and many more, that could trigger species range shifts (Sala,
-2000; Jetz et al., 2007; Parmesan et al., 2011; Péron and Altwegg,
-2015). In the Southern Hemisphere, relatively fewer studies on species
-range shifts have been conducted than in the Northern Hemisphere, where
-a general pattern of poleward and upward range shifts has been reported
-(Lenoir and Svenning, 2013, 2015). The movement of animals, whether
-through dispersal, migration or foraging, exists as a result of the
-potential benefits associated with the movement (Alexander, 1998; Shaw,
-2020). Seasonality in abiotic factors influenced by the earth’s climate
-system, for example, the cyclic fluctuation of temperature, rainfall and
-photoperiod (Pezzulli et al., 2005) give rise to seasonal environmental
-conditions and events in many species of plant and animals (Sun, 2016).
-Fluxes in resource availability resulting from seasonality present
-opportunities for the exploitation of seasonal environments. In the case
-of deteriorating conditions, if movement facilitates an escape, then
-movement away from unfavourable conditions will be favoured (Shaw,
-2020). The escape from unfavourable conditions in pursuit of relatively
-favourable ones results in occupied sites being vacated and previously
-vacant sites being occupied. Such movements have been hypothesized to
-have led to the evolution of seasonal migration as a strategy in
-response to seasonally varying conditions in migratory birds (Berthold,
-2001; Rappole, 1995). Seasonal migration in birds is described as the
+Large-scale movement of animals -- migration and nomadism -- are thought to have evolved in response to environmental variability (Salewski and Bruderer 2007) [@teitelbaum2019beyond]. Migration is a response to predictable seasonal variation whereas nomadism is a response to less predictable, aseasonal variation [@teitelbaum2019beyond] 
+<!-- The movement of animals, whether -->
+<!-- through dispersal, migration or foraging, exists as a result of the -->
+<!-- potential benefits associated with the movement  -->
+(Alexander, 1998; Shaw,
+2020). 
+<!-- Seasonality in abiotic factors influenced by the earth’s climate -->
+<!-- system, for example, the cyclic fluctuation of temperature, rainfall and -->
+<!-- photoperiod (Pezzulli et al., 2005) give rise to seasonal environmental -->
+<!-- conditions and events in many species of plant and animals (Sun, 2016). -->
+<!-- Fluxes in resource availability resulting from seasonality present -->
+<!-- opportunities for the exploitation of seasonal environments. In the case -->
+<!-- of deteriorating conditions, if movement facilitates an escape, then -->
+<!-- movement away from unfavourable conditions will be favoured (Shaw, -->
+<!-- 2020). The escape from unfavourable conditions in pursuit of relatively -->
+<!-- favourable ones results in occupied sites being vacated and previously -->
+<!-- vacant sites being occupied. Such movements have been hypothesized to -->
+<!-- have led to the evolution of seasonal migration as a strategy in -->
+<!-- response to seasonally varying conditions in migratory birds (Berthold, -->
+<!-- 2001; Rappole, 1995).  -->
+While seasonal migration is the
 regular return movement between breeding and non-breeding grounds
-(Newton, 2008; Rappole, 2013). This definition encompasses different
-patterns of seasonal movements mainly differing in regularity, distance
-and population level patterns resulting in different types of bird
-migration as described by Rappole (2013). Long distance migrants migrate
-between breeding and non-breeding grounds that are separated by
-thousands of kilometres while short distance migrants travel relatively
-shorter distances. In some species a certain portion of the population
-may migrate to non-breeding grounds while 6 another may choose not to
-migrate from their breeding grounds in a type of migration called
-partial migration. Altitudinal migrants migrate to different elevations
-for their breeding and non-breeding seasons. Wanderers are migrants that
-have a specific breeding ground to which they return to but do not have
-a specific non-breeding ground, while stepwise migrants migrate from
-their breeding grounds to two or more specific non-breeding grounds
-consecutively. Nomadic migrants move between breeding and non-breeding
-grounds with neither being a fixed location (Rappole, 2013). Several of
-these types of migration are not mutually exclusive, the groupings are
-somewhat arbitrary and local populations may differ among each other in
-terms or migratory behaviour (Rappole, 2013). An organism’s behavioural
+(Newton, 2008; Rappole, 2013), nomadic migrants move between breeding and non-breeding
+grounds with neither being a fixed location (Rappole, 2013). 
+<!-- This definition encompasses different -->
+<!-- patterns of seasonal movements mainly differing in regularity, distance -->
+<!-- and population level patterns resulting in different types of bird -->
+<!-- migration as described by Rappole (2013). Long distance migrants migrate -->
+<!-- between breeding and non-breeding grounds that are separated by -->
+<!-- thousands of kilometres while short distance migrants travel relatively -->
+<!-- shorter distances. In some species a certain portion of the population -->
+<!-- may migrate to non-breeding grounds while another may choose not to -->
+<!-- migrate from their breeding grounds in a type of migration called -->
+<!-- partial migration.  -->
+<!-- Altitudinal migrants migrate to different elevations -->
+<!-- for their breeding and non-breeding seasons.  -->
+<!-- Wanderers are migrants that -->
+<!-- have a specific breeding ground to which they return to but do not have -->
+<!-- a specific non-breeding ground, while stepwise migrants migrate from -->
+<!-- their breeding grounds to two or more specific non-breeding grounds -->
+<!-- consecutively.  -->
+<!-- Several of -->
+<!-- these types of migration are not mutually exclusive, the groupings are -->
+<!-- somewhat arbitrary and local populations may differ among each other in -->
+<!-- terms or migratory behaviour (Rappole, 2013).  -->
+
+An organism’s behavioural
 strategy is defined as a rule that determines how the organism responds
 to any set of possible circumstances/environmental conditions (Houston
 et al., 1999). In the context of migration in birds, strategy determines
@@ -121,7 +129,9 @@ and physiological systems (Ramenofsky et al., 2012). This results in a
 migration phenology which influences decisions such as timing of
 migratory movement, accumulating fat reserves prior to migration,
 growing of flight muscles, leaving or staying longer in a stopover site,
-settling for breeding or continuing to travel and so forth. Cues are
+settling for breeding or continuing to travel and so forth. 
+
+Cues are
 those aspects of the environment, both physical and social, that are
 perceivable and/or predictive enough to prompt such decisions (Winkler
 et al., 2014). They can be divided into two categories namely; initial
@@ -139,10 +149,12 @@ conditions. Examples include resource availability, social interactions,
 habitat alterations and predator density (Newton, 2008, 2012; Wingfield
 and Ramenofsky, 2011). Perception of cues may be similar or different at
 species, population and individual level, hence the many different types
-of migration observed (Helm et al., 2009; Ramenofsky et al., 2012). The
+of migration observed (Helm et al., 2009; Ramenofsky et al., 2012). 
+
+The
 many different migratory behaviours seen in birds have been historically
 categorized into two broad groupings namely, obligate and facultative
-migration (Newton, 2012). This 7 categorization focuses more on what is
+migration (Newton, 2012). This categorization focuses more on what is
 presumed to be the driving force behind patterns of migratory behaviour.
 Obligate migration is considered to be under strong endogenous control,
 prompting an individual to leave its breeding area at a certain time of
@@ -153,7 +165,9 @@ direct response to prevailing conditions, for example, food supply or
 weather conditions. Individuals may migrate in some years and not in
 others and distance travelled may vary greatly from year to year and
 between individuals. It is thus mainly characterised by irregularity,
-inconsistency and unpredictability (Newton, 2008, 2012). Both strategies
+inconsistency and unpredictability (Newton, 2008, 2012). 
+
+Both strategies
 are adaptive with obligate migration being adapted to resource levels
 varying regularly and predictably and facultative migration being
 adapted to resource levels varying unpredictably (Newton, 2008, 2012).
@@ -171,12 +185,16 @@ migrations can therefore be viewed as having both obligate and
 facultative phases but with the relative strengths of the phases varying
 between species and populations such that even the most obligate migrant
 can sometimes behave as a facultative migrant when experiencing certain
-circumstances (Newton, 2012). This highlights the importance of the
+circumstances (Newton, 2012). 
+
+This highlights the importance of the
 availability and quality of environmental cues for migratory behaviour.
 As mentioned earlier, migratory birds collect information and integrate
 environmental and internal physiological conditions before making
 decisions about timing, direction, distance and cessation of migratory
-movements (Kumar et al., 2010; Winkler et al., 2014). One of the
+movements (Kumar et al., 2010; Winkler et al., 2014). 
+
+One of the
 manifestations of these decisions, interpretable to us, is where and
 when migratory birds are seen, also understood as their geographic
 range. Gaston (1991, 1994, 2003) describes two broad measures of
@@ -185,11 +203,13 @@ occupancy. Extent of occurrence quantifies the area within the inner
 most limits of a species’ occurrence and is inclusive of those parts
 that are not necessarily occupied. In simple terms, it can be described
 as a polygon around known occurrence records. Area of occupancy
-describes the 8 area within the polygon in which the species is actually
+describes the area within the polygon in which the species is actually
 found. Assuming equal division of space (for example, grid cells), the
 area of occupancy of a species can be defined as the set of all grid
 cells in which the probability of occurrence exceeds a given threshold
-(Peterson et al., 2011). The probability of occurrence of a species at a
+(Peterson et al., 2011). 
+
+The probability of occurrence of a species at a
 given location is not random because a species’ range is considered a
 geographical manifestation of its demographic response to spatial and
 temporal variation in environmental conditions (Pulliam, 2000; Holt et
@@ -200,6 +220,8 @@ seasonality changes environmental conditions at different times of the
 year. Birds then perceive environmental conditions or changes thereof
 partly based on their position on the obligate-facultative migration
 continuum and make decisions regarding movement and where to settle.
+
+
 This manifests itself in the geographic range of a species in both
 breeding or non- breeding season. Changes in the general pattern of such
 decisions over seasons, for example, deciding to settle in a new area,
@@ -209,7 +231,9 @@ can be achieved through local colonization and local extinction dynamics
 (Tingley et al., 2009). Range fluctuations can therefore be better
 understood through local extinction and colonization dynamics which help
 explain the persistence of populations in dynamic systems over long
-periods of time (Hanski, 1998; Altwegg et al., 2008). Bird distributions
+periods of time (Hanski, 1998; Altwegg et al., 2008). 
+
+Bird distributions
 are often climate-limited (Wormworth and Şekercioğlu, 2011). However,
 climate works in conjunction with many biotic factors resulting in
 complex relationships that shape species’ distributions (Holt and Keitt,
@@ -265,7 +289,9 @@ determinants of a species’ sensitivity to environmental change with
 regards to its range is important (Pereira et al., 2010; McMahon et al.,
 2011), especially because range contractions, local extinctions and
 declines in species richness often form the basis of conservation action
-and effort (Böhning-Gaese and Lemoine, 2004). Southern Africa has had
+and effort (Böhning-Gaese and Lemoine, 2004). 
+
+Southern Africa has had
 several examples of bird range expansions and contractions in the 20 th
 century. Examples of expansions include the Yellow-Billed Oxpecker
 (Buphagus africanus, Stutterheim and Brooke, 1981), South African
@@ -312,7 +338,9 @@ precipitation patterns and an increase in the occurrence of extreme
 weather events in different regions have been observed globally (IPCC,
 2021). The global impacts of climate change on natural systems are
 manifold but vary regionally and even locally in their occurrence,
-severity and implications (IPCC, 2021). Africa has experienced a 11 0.5
+severity and implications (IPCC, 2021). 
+
+Africa has experienced a 0.5
 oC increase in near surface temperature over the past 50 – 100 years
 (IPCC, 2014). For southern Africa, minimum temperatures have been
 reported to have increased more rapidly than maximum temperatures (New
@@ -359,8 +387,12 @@ biome, while in the north eastern parts, the proportion of rain falling
 in summer increases (Mucina et 12 al., 2006b). North of the Nama Karoo
 is the Savanna biome characterized by highly seasonal rainfall mostly
 falling in summer and subtropical temperatures (Rutherford et al.,
-2006). Figure 1.1: Vegetation biomes of South Africa (figure taken from
-Mucina and Rutherford, 2006). Western South Africa (herein WSA), has
+2006). 
+
+Figure 1.1: Vegetation biomes of South Africa (figure taken from
+Mucina and Rutherford, 2006). 
+
+Western South Africa (herein WSA), has
 three rainfall seasonality zones that closely mirror the delineation of
 the biomes (see figure 1.2; Schulze and Kunz, 1997). The distinction
 between the rainfall seasonality zones is particularly important in the
@@ -372,8 +404,12 @@ end of 2014 and continued to intensify until September 2017. The
 all-year rainfall south coast zone started experiencing severe drought
 towards the end of 2016 until late 2017. The Great Karoo interior
 experienced the peak of the drought from early to late 2017 (Conradie,
-2018; Archer et al., 2019). 13 Figure 1.2: Rainfall seasonality in South
-Africa (figure taken from Schulze and Kunz, 1997) With changes to the
+2018; Archer et al., 2019). 
+
+Figure 1.2: Rainfall seasonality in South
+Africa (figure taken from Schulze and Kunz, 1997) 
+
+With changes to the
 environment emanating from climate change, land use and the 2015-2017
 drought event, I suspect that some birds, particularly migrant species,
 would have responded to the changes in some way through their seasonal
@@ -387,7 +423,9 @@ models over naïve site occupancy estimates, described as the number of
 times the species of interest is observed divided by the number of
 surveys conducted in the site, to model site occupancy. Furthermore, I
 seek to identify the key aspects of seasonality that influence the range
-dynamics of respective species. 14 Migrant and nomadic species present a
+dynamics of respective species. 
+
+Migrant and nomadic species present a
 complexity in their range dynamics that is not found in their resident
 counterparts. They occupy partly or wholly different ranges at different
 times of the year dividing their overall geographic range into two or
@@ -397,7 +435,9 @@ significantly from year to year depending on where sporadic rainfall has
 created suitable conditions (Herremans, 1998). Such behaviour could
 obscure signals of range shifts, contractions or expansions occurring at
 seasonal and/or overall range scale. Therefore, data used to study
-changes in range dynamics must be appropriate. The Southern African Bird
+changes in range dynamics must be appropriate. 
+
+The Southern African Bird
 Atlas Project 2 (2007-currently) is a citizen science project which is
 aimed at mapping the distribution of bird species in southern Africa
 over long periods thus creating a “movie” of their distribution rather
@@ -422,33 +462,35 @@ al., (2016) as well as data availability on SABAP 2 (table 1.2).
 
 Table 1.1: Obligate migratory species and their movement summary with
 respect to western South Africa according to Chittendem et al., (2016)
-Species Movement summary African paradise flycatcher (Terpsiphone
-viridis) Intra-african migrant arriving between Sept – Oct and leaves
-western South Africa during 15 European bee-eater (Merops apiaster)
-Greater striped swallow (Hirundo cucullate) White throated swallow
-(Hirundo albigularis) Yellow billed kite (Milvus aegyptius) April. It is
-resident in other parts of southern Africa. Two different populations
-occur in southern Africa: non breeding Palearctic migrants (mostly
-arriving in Oct and leaving in Apr) and breeding intra-African migrants
-(mostly arriving in Aug and leaving Feb). Breeding intra-African migrant
-arriving between Jul/Aug and departing between Apr/May. Breeding
-intra-African migrant arriving between Jul/Aug and depart between
-Apr/May. Intra-African breeding migrant, arriving in southern Africa
-from August-October and departing in March. Table 1.2: Facultative
-migratory species and their movement summary within western South Africa
-according to Chittendem et al., (2016). Species Movement summary African
-sacred ibis Resident or nomadic in response to water availability.
-(Threskiornis aethiopicus) Black headed canary Nomadic, sometimes
-irrupting out of usual range. (Serinus alario) Grey-backed sparrow lark
-Nomadic in response to rainfall; partially migratory. (Eremopterix
-verticalis) Lark-like bunting Highly nomadic. (Emberiza impetuani)
-Namaqua sandgrouse Nomadic and partially migratory; present in
-Namaqualand and Karoo in summer and (Pterocles namaqua) southern
-Kalahari in winter. 16 Southern Pale chanting goshawk (Melierax canorus)
-Largely resident but is known to move in response to conditions and food
-availability. 17
 
-# Chapter 2: Methods and dynamic occupancy models
+\begin{tabular}{ll} 
+Species & Movement summary\\\hline
+African paradise flycatcher (Terpsiphone viridis) & Intra-african migrant arriving between Sept – Oct and leaves
+western South Africa during April. It is resident in other parts of southern Africa.\\
+European bee-eater (Merops apiaster) & Two different populations occur in southern Africa: non breeding Palearctic migrants (mostly
+arriving in Oct and leaving in Apr) and breeding intra-African migrants (mostly arriving in Aug and leaving Feb).\\
+Greater striped swallow (Hirundo cucullate)  & Breeding intra-African migrant arriving between Jul/Aug and departing between Apr/May.\\
+White throated swallow (Hirundo albigularis) & Breeding intra-African migrant arriving between Jul/Aug and depart between Apr/May.\\ 
+Yellow billed kite (Milvus aegyptius) &  Intra-African breeding migrant, arriving in southern Africa from August-October and departing in March.\\\hline
+\end{tabular}
+
+Table 1.2: Facultative
+migratory species and their movement summary within western South Africa
+according to Chittendem et al., (2016). 
+
+\begin{tabular}{ll} 
+Species & Movement summary\\\hline
+African sacred ibis (Threskiornis aethiopicus) & Resident or nomadic in response to water availability.\\
+Black headed canary (Serinus alario) & Nomadic, sometimes irrupting out of usual range. \\
+Grey-backed sparrow lark (Eremopterix verticalis) & Nomadic in response to rainfall; partially migratory.\\
+Lark-like bunting (Emberiza impetuani) & Highly nomadic.\\
+Namaqua sandgrouse (Pterocles namaqua) & Nomadic and partially migratory; present in Namaqualand and Karoo in summer and  southern
+Kalahari in winter. \\
+Southern Pale chanting goshawk (Melierax canorus) & Largely resident but is known to move in response to conditions and food
+availability.\\\hline
+\end{tabular}
+
+# Methods
 
 Species distribution modelling (SDM) approaches that can accurately and
 efficiently quantify complex range dynamics over large spatial and long
